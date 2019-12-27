@@ -1,0 +1,38 @@
+body{
+    background-color: #f1f0f0;
+}
+header{
+    color: white;
+    background: #252525;
+    font-size: 35px;
+    text-align: center;
+    padding: 10px;
+}
+.side-bar{
+    padding-left: 30px;
+    padding-top: 10px;
+    
+}
+.display{
+    border: 1px #d8d5d5 solid;
+    margin-top: 20px;
+    padding: 20px ;
+    font-size: 20px;
+    background: white;
+}
+.search{
+    padding: 8px 11px;
+    border-radius: 9px;
+    background: #3d71ff;
+    color: white;
+}
+input{
+    padding: 5px;
+}
+.card{
+    background: #3d71ff;
+    color: white;
+}
+.five{
+    margin-top: 20px;
+}

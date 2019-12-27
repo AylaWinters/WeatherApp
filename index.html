@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bestest Weather</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="reset.css"> -->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ba01d065f2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header> The Weather App </header>
+    <div class="row">
+        <div class="side-bar col-3">
+            <h4>Search for a City:</h4>
+            <input type="text" id="search" placeholder="Search..">
+            <button class="search"><i class="fas fa-search"></i></button>
+            <div class="historic"></div>
+        </div>
+        <div class="container display col-9">
+            <h2></h2>
+            Temperature:
+            <br><br>
+            Humidity:
+            <br><br>
+            Wind Speed:
+            <br><br>
+            UV Index:
+
+        </div>
+        <div class="col-3"></div>
+        <div class="col-9 five">
+            <h3>5-Day Forecast:</h3>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <h6 class="card-subtitle mb-2">Card subtitle</h6>
+                    <p class="card-text">Temp: <br> Humidity: </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
+
+</html>
