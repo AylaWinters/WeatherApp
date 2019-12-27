@@ -20,7 +20,7 @@ header{
     font-size: 20px;
     background: white;
 }
-.search{
+.searchBtn{
     padding: 8px 11px;
     border-radius: 9px;
     background: #3d71ff;
@@ -28,11 +28,22 @@ header{
 }
 input{
     padding: 5px;
+    /* padding-right: 60px; */
 }
 .card{
     background: #3d71ff;
     color: white;
+    float: left;
+    margin-right: 4%;
+    margin-top: 10px;
 }
 .five{
     margin-top: 20px;
+}
+.resText{
+    font-size: 40px;
+
+}
+#name{
+    font-size: 40px;
 }

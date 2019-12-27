@@ -19,28 +19,71 @@
         <div class="side-bar col-3">
             <h4>Search for a City:</h4>
             <input type="text" id="search" placeholder="Search..">
-            <button class="search"><i class="fas fa-search"></i></button>
+            <button class="searchBtn"><i class="fas fa-search"></i></button>
             <div class="historic"></div>
         </div>
         <div class="container display col-9">
-            <h2></h2>
-            Temperature:
-            <br><br>
-            Humidity:
-            <br><br>
-            Wind Speed:
-            <br><br>
-            UV Index:
+            <h2 id=name></h2>
+            <br>
+            Temperature:<div class="resText" id="temp"></div>
+            <br>
+            Humidity: <div class="resText" id="hum"></div>
+            <br>
+            Wind Speed: <div class="resText" id="wind"></div>
+
 
         </div>
         <div class="col-3"></div>
         <div class="col-9 five">
             <h3>5-Day Forecast:</h3>
-            <div class="card" style="width: 18rem;">
+            <div class="card" style="width: 10rem;">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2">Card subtitle</h6>
-                    <p class="card-text">Temp: <br> Humidity: </p>
+                    <h5 class="card-title" id="day1"></h5>
+                    <h6 class="card-subtitle mb-2"><br></h6>
+                    <p class="card-text">
+                        <div id="temp1"></div>
+                        <div id="hum1"></div>
+                    </p>
+                </div>
+            </div>
+            <div class="card" style="width: 10rem;">
+                <div class="card-body">
+                    <h5 class="card-title" id="day2"></h5>
+                    <h6 class="card-subtitle mb-2"><br></h6>
+                    <p class="card-text">
+                        <div id="temp2"></div>
+                        <div id="hum2"></div>
+                    </p>
+                </div>
+            </div>
+            <div class="card" style="width: 10rem;">
+                <div class="card-body">
+                    <h5 class="card-title" id="day3"></h5>
+                    <h6 class="card-subtitle mb-2"><br></h6>
+                    <p class="card-text">
+                        <div id="temp3"></div>
+                        <div id="hum3"></div>
+                    </p>
+                </div>
+            </div>
+            <div class="card" style="width: 10rem;">
+                <div class="card-body">
+                    <h5 class="card-title" id="day4"></h5>
+                    <h6 class="card-subtitle mb-2"><br></h6>
+                    <p class="card-text">
+                        <div id="temp4"></div>
+                        <div id="hum4"></div>
+                    </p>
+                </div>
+            </div>
+            <div class="card" style="width: 10rem;">
+                <div class="card-body">
+                    <h5 class="card-title" id="day5"></h5>
+                    <h6 class="card-subtitle mb-2"><br></h6>
+                    <p class="card-text">
+                        <div id="temp5"></div>
+                        <div id="hum5"></div>
+                    </p>
                 </div>
             </div>
 
@@ -48,11 +91,18 @@
 
     </div>
 
+    </div>
+
+    </div>
+
+    </div>
 
 
 
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </body>
 
 </html>
