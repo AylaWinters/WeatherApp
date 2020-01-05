@@ -22,7 +22,8 @@ $("#day5").text(day5);
 
 // grab input and put in query url
 $(".searchBtn").on("click", function search(event) {
-    event.preventDefault();
+    // event.preventDefault();
+    // location.reload()
 
     var city = $("#search").val();
 
