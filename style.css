@@ -13,12 +13,21 @@ header{
     padding-top: 10px;
     
 }
+.info{
+    /* flex-direction: row; */
+    /* float: left; */
+    display: flex;
+}
 .display{
     border: 1px #d8d5d5 solid;
-    margin-top: 20px;
-    padding: 20px ;
+    margin: 20px 0px 0px 0px;
+    padding: 20px 0px 20px 20px;
     font-size: 20px;
     background: white;
+    
+}
+.row{
+    max-width: 100%;
 }
 .searchBtn{
     padding: 8px 11px;
@@ -28,14 +37,23 @@ header{
 }
 input{
     padding: 5px;
-    /* padding-right: 60px; */
+    margin-left: 2px;
+    max-width: 70%;
 }
 .card{
     background: #3d71ff;
     color: white;
     float: left;
-    margin-right: 4%;
+    margin-right: 2%;
     margin-top: 10px;
+    border-radius: 5px;
+    width:  160px
+    
+
+}
+.card-body{
+    padding: 10px 20px 0 20px;  
+
 }
 .five{
     margin-top: 20px;
@@ -44,6 +62,60 @@ input{
     font-size: 40px;
 
 }
+
 #name{
-    font-size: 40px;
+    font-size: 60px;
+
+}
+ul{
+    list-style-type: none;
+    font-size: 30px;
+    align-content: left;
+    padding: 5px 0 0 0px;
+    
+}
+li{
+    border: 1px rgb(182, 181, 181) solid;
+    margin-top: 10px;
+    max-width: 275px;
+    background: white;
+    padding: 5px;
+
+}
+
+/* ====================
+    Media Inqueries
+======================= */
+
+@media only screen and (max-width:1000px) {
+    .info{
+        display: inline;
+    }
+}
+
+@media only screen and (max-width:850px) {
+    input{
+        max-width: 60%;
+    }
+    .flexcontainer {
+        flex-direction: column;
+        margin-left: 15%;
+        }
+        .side-bar{
+            min-width: 800px;
+        }
+}
+
+@media only screen and (max-width: 500px) {
+    body{
+        align-items: center;
+    }
+    .side-bar{
+        min-width: 300px;
+        /* margin-left: 15%; */
+    }
+    .main-weather{
+        min-width: 275px;
+        /* margin-left: 15%; */
+    }
 }

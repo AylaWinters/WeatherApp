@@ -9,78 +9,88 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- <link rel="stylesheet" href="reset.css"> -->
-    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/ba01d065f2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header> The Weather App </header>
-    <div class="row">
+    <div class="row flexcontainer">
         <div class="side-bar col-3">
             <h4>Search for a City:</h4>
             <input type="text" id="search" placeholder="Search..">
-            <button class="searchBtn"><i class="fas fa-search"></i></button>
-            <div class="historic"></div>
+            <button class="searchBtn">
+                <i class="fas fa-search"></i>
+            </button>
+            <div class="historic">
+                <ul id="list"></ul>
+            </div>
         </div>
-        <div class="container display col-9">
+        <div class="main-weather container display col-9">
             <h2 id=name></h2>
-            <br>
-            Temperature:<div class="resText" id="temp"></div>
-            <br>
-            Humidity: <div class="resText" id="hum"></div>
-            <br>
-            Wind Speed: <div class="resText" id="wind"></div>
+            <div><img class="icon" src=""></div>
+            <div class="info row">
+                <div class="col-3">
+                    Temperature:<div class="resText" id="temp"></div>
+                </div>
+                <div class="col-2">
+                    Humidity: <div class="resText" id="hum"></div>
+                </div>
+                <div class="col-6">
+                    Wind Speed: <div class="resText" id="wind"></div>
+                </div>
+            </div>
 
 
         </div>
         <div class="col-3"></div>
         <div class="col-9 five">
             <h3>5-Day Forecast:</h3>
-            <div class="card" style="width: 10rem;">
+            <div class="card">
                 <div class="card-body">
                     <h5 class="card-title" id="day1"></h5>
-                    <h6 class="card-subtitle mb-2"><br></h6>
-                    <p class="card-text">
+                    <h6 class="card-subtitle mb-2"><img class="icon1" src=""></h6>
+                    <p class=" card-text">
                         <div id="temp1"></div>
                         <div id="hum1"></div>
                     </p>
                 </div>
             </div>
-            <div class="card" style="width: 10rem;">
+            <div class="card">
                 <div class="card-body">
                     <h5 class="card-title" id="day2"></h5>
-                    <h6 class="card-subtitle mb-2"><br></h6>
-                    <p class="card-text">
+                    <h6 class="card-subtitle mb-2"><img class="icon2" src=""></h6>
+                    <p class=" card-text">
                         <div id="temp2"></div>
                         <div id="hum2"></div>
                     </p>
                 </div>
             </div>
-            <div class="card" style="width: 10rem;">
+            <div class="card">
                 <div class="card-body">
                     <h5 class="card-title" id="day3"></h5>
-                    <h6 class="card-subtitle mb-2"><br></h6>
-                    <p class="card-text">
+                    <h6 class="card-subtitle mb-2"><img class="icon3" src=""></h6>
+                    <p class=" card-text">
                         <div id="temp3"></div>
                         <div id="hum3"></div>
                     </p>
                 </div>
             </div>
-            <div class="card" style="width: 10rem;">
+            <div class="card">
                 <div class="card-body">
                     <h5 class="card-title" id="day4"></h5>
-                    <h6 class="card-subtitle mb-2"><br></h6>
-                    <p class="card-text">
+                    <h6 class="card-subtitle mb-2"><img class="icon4" src=""></h6>
+                    <p class=" card-text">
                         <div id="temp4"></div>
                         <div id="hum4"></div>
                     </p>
                 </div>
             </div>
-            <div class="card" style="width: 10rem;">
+            <div class="card">
                 <div class="card-body">
                     <h5 class="card-title" id="day5"></h5>
-                    <h6 class="card-subtitle mb-2"><br></h6>
-                    <p class="card-text">
+                    <h6 class="card-subtitle mb-2"><img class="icon5" src=""></h6>
+                    <p class=" card-text">
                         <div id="temp5"></div>
                         <div id="hum5"></div>
                     </p>
@@ -96,6 +106,8 @@
     </div>
 
     </div>
+
+
 
 
 
