@@ -36,7 +36,7 @@ $(document).ready(function () {
 
 
 
-            queryURL = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&APPID=88ec15a371a789a350f0798f4a6bd272"
+            queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&APPID=88ec15a371a789a350f0798f4a6bd272"
 
 
             // ajax to pull data
@@ -74,7 +74,7 @@ $(document).ready(function () {
                 $("#temp1").text("Temp: " + ((response.list[5].main.temp - 273.15) * 9 / 5 + 32).toFixed(0))
                 $("#hum1").text("Humidity: " + response.list[5].main.humidity)
                 var ic1 = response.list[5].weather[0].icon
-                var iURL1 = ("http://openweathermap.org/img/wn/" + ic1 + "@2x.png")
+                var iURL1 = ("https://openweathermap.org/img/wn/" + ic1 + "@2x.png")
                 $(".icon1").attr("src", iURL1)
 
 
@@ -82,28 +82,28 @@ $(document).ready(function () {
                 $("#temp2").text("Temp: " + ((response.list[13].main.temp - 273.15) * 9 / 5 + 32).toFixed(0))
                 $("#hum2").text("Humidity: " + response.list[13].main.humidity)
                 var ic2 = response.list[13].weather[0].icon
-                var iURL2 = ("http://openweathermap.org/img/wn/" + ic2 + "@2x.png")
+                var iURL2 = ("https://openweathermap.org/img/wn/" + ic2 + "@2x.png")
                 $(".icon2").attr("src", iURL2)
 
 
                 $("#temp3").text("Temp: " + ((response.list[21].main.temp - 273.15) * 9 / 5 + 32).toFixed(0))
                 $("#hum3").text("Humidity: " + response.list[21].main.humidity)
                 var ic3 = response.list[21].weather[0].icon
-                var iURL3 = ("http://openweathermap.org/img/wn/" + ic3 + "@2x.png")
+                var iURL3 = ("https://openweathermap.org/img/wn/" + ic3 + "@2x.png")
                 $(".icon3").attr("src", iURL3)
 
 
                 $("#temp4").text("Temp: " + ((response.list[29].main.temp - 273.15) * 9 / 5 + 32).toFixed(0))
                 $("#hum4").text("Humidity: " + response.list[29].main.humidity)
                 var ic4 = response.list[29].weather[0].icon
-                var iURL4 = ("http://openweathermap.org/img/wn/" + ic4 + "@2x.png")
+                var iURL4 = ("https://openweathermap.org/img/wn/" + ic4 + "@2x.png")
                 $(".icon4").attr("src", iURL4)
 
 
                 $("#temp5").text("Temp: " + ((response.list[37].main.temp - 273.15) * 9 / 5 + 32).toFixed(0))
                 $("#hum5").text("Humidity: " + response.list[37].main.humidity)
                 var ic5 = response.list[37].weather[0].icon
-                var iURL5 = ("http://openweathermap.org/img/wn/" + ic5 + "@2x.png")
+                var iURL5 = ("https://openweathermap.org/img/wn/" + ic5 + "@2x.png")
                 $(".icon5").attr("src", iURL5)
 
 
@@ -197,7 +197,7 @@ $(document).ready(function () {
 
             //fill in data to display
             var iconCode = response.weather[0].icon
-            var iconURL = ("http://openweathermap.org/img/wn/" + iconCode + "@2x.png")
+            var iconURL = ("https://openweathermap.org/img/wn/" + iconCode + "@2x.png")
 
             $("#name").text(response.name + " " + today)
             $(".icon").attr('src', iconURL)
@@ -252,7 +252,7 @@ $(document).ready(function () {
             $("#temp1").text("Temp: " + ((response.list[5].main.temp - 273.15) * 9 / 5 + 32).toFixed(0))
             $("#hum1").text("Humidity: " + response.list[5].main.humidity)
             var ic1 = response.list[5].weather[0].icon
-            var iURL1 = ("http://openweathermap.org/img/wn/" + ic1 + "@2x.png")
+            var iURL1 = ("https://openweathermap.org/img/wn/" + ic1 + "@2x.png")
             $(".icon1").attr("src", iURL1)
 
 
@@ -260,28 +260,28 @@ $(document).ready(function () {
             $("#temp2").text("Temp: " + ((response.list[13].main.temp - 273.15) * 9 / 5 + 32).toFixed(0))
             $("#hum2").text("Humidity: " + response.list[13].main.humidity)
             var ic2 = response.list[13].weather[0].icon
-            var iURL2 = ("http://openweathermap.org/img/wn/" + ic2 + "@2x.png")
+            var iURL2 = ("https://openweathermap.org/img/wn/" + ic2 + "@2x.png")
             $(".icon2").attr("src", iURL2)
 
 
             $("#temp3").text("Temp: " + ((response.list[21].main.temp - 273.15) * 9 / 5 + 32).toFixed(0))
             $("#hum3").text("Humidity: " + response.list[21].main.humidity)
             var ic3 = response.list[21].weather[0].icon
-            var iURL3 = ("http://openweathermap.org/img/wn/" + ic3 + "@2x.png")
+            var iURL3 = ("https://openweathermap.org/img/wn/" + ic3 + "@2x.png")
             $(".icon3").attr("src", iURL3)
 
 
             $("#temp4").text("Temp: " + ((response.list[29].main.temp - 273.15) * 9 / 5 + 32).toFixed(0))
             $("#hum4").text("Humidity: " + response.list[29].main.humidity)
             var ic4 = response.list[29].weather[0].icon
-            var iURL4 = ("http://openweathermap.org/img/wn/" + ic4 + "@2x.png")
+            var iURL4 = ("https://openweathermap.org/img/wn/" + ic4 + "@2x.png")
             $(".icon4").attr("src", iURL4)
 
 
             $("#temp5").text("Temp: " + ((response.list[37].main.temp - 273.15) * 9 / 5 + 32).toFixed(0))
             $("#hum5").text("Humidity: " + response.list[37].main.humidity)
             var ic5 = response.list[37].weather[0].icon
-            var iURL5 = ("http://openweathermap.org/img/wn/" + ic5 + "@2x.png")
+            var iURL5 = ("https://openweathermap.org/img/wn/" + ic5 + "@2x.png")
             $(".icon5").attr("src", iURL5)
 
 
