@@ -1,5 +1,7 @@
 body{
-    background-color: #f1f0f0;
+    
+    /* background-image: url("https://c.pxhere.com/images/94/c6/02e76c7102c0d9b49af39430aac3-1450575.jpg!d"); */
+    background-image: url("http://wallperio.com/data/out/479/sky-wallpapers-hd_624135179.jpg");
 }
 header{
     color: white;
@@ -18,12 +20,16 @@ header{
     /* float: left; */
     display: flex;
 }
+.title{
+    /* color: white; */
+}
 .display{
     border: 1px #d8d5d5 solid;
     margin: 20px 0px 0px 0px;
     padding: 20px 0px 20px 20px;
     font-size: 20px;
-    background: white;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
     
 }
 .row{
@@ -48,8 +54,18 @@ input{
     margin-top: 10px;
     border-radius: 5px;
     width:  160px
-    
-
+}
+.hide{
+    display: none;
+}
+#err{
+    color: red;
+    font-style: italic;
+    padding-left: 20px;
+    font-weight: bold;
+}
+.ws{
+    min-width: 150px;
 }
 .card-body{
     padding: 10px 20px 0 20px;  
@@ -57,6 +73,13 @@ input{
 }
 .five{
     margin-top: 20px;
+    
+}
+
+#fd{
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-evenly;
 }
 .resText{
     font-size: 40px;
@@ -80,6 +103,8 @@ li{
     max-width: 275px;
     background: white;
     padding: 5px;
+    text-align: center;
+    border-radius: 5px;
 
 }
 
@@ -92,6 +117,15 @@ li{
         display: inline;
     }
 }
+
+@media only screen and (max-width:950px){
+    #fd{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
 
 @media only screen and (max-width:850px) {
     input{

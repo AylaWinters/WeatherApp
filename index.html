@@ -17,26 +17,27 @@
     <header> The Weather App </header>
     <div class="row flexcontainer">
         <div class="side-bar col-3">
-            <h4>Search for a City:</h4>
+            <h4 class="title">Search for a City:</h4>
             <input type="text" id="search" placeholder="Search..">
             <button class="searchBtn">
                 <i class="fas fa-search"></i>
             </button>
             <div class="historic">
+                <p id="err"></p>
                 <ul id="list"></ul>
             </div>
         </div>
-        <div class="main-weather container display col-9">
+        <div class="main-weather container display hide col-9">
             <h2 id=name></h2>
             <div><img class="icon" src=""></div>
             <div class="info row">
-                <div class="col-3">
+                <div class="col-2 ws">
                     Temperature:<div class="resText" id="temp"></div>
                 </div>
                 <div class="col-2">
                     Humidity: <div class="resText" id="hum"></div>
                 </div>
-                <div class="col-6">
+                <div class="col-6 ws">
                     Wind Speed: <div class="resText" id="wind"></div>
                 </div>
             </div>
@@ -44,59 +45,60 @@
 
         </div>
         <div class="col-3"></div>
-        <div class="col-9 five">
+        <div class="col-9 five hide">
             <h3>5-Day Forecast:</h3>
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title" id="day1"></h5>
-                    <h6 class="card-subtitle mb-2"><img class="icon1" src=""></h6>
-                    <p class=" card-text">
-                        <div id="temp1"></div>
-                        <div id="hum1"></div>
-                    </p>
+            <div id="fd">
+                <div class="card fiveDay">
+                    <div class="card-body">
+                        <h5 class="card-title" id="day1"></h5>
+                        <h6 class="card-subtitle mb-2"><img class="icon1" src=""></h6>
+                        <p class=" card-text">
+                            <div id="temp1"></div>
+                            <div id="hum1"></div>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title" id="day2"></h5>
+                        <h6 class="card-subtitle mb-2"><img class="icon2" src=""></h6>
+                        <p class=" card-text">
+                            <div id="temp2"></div>
+                            <div id="hum2"></div>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title" id="day3"></h5>
+                        <h6 class="card-subtitle mb-2"><img class="icon3" src=""></h6>
+                        <p class=" card-text">
+                            <div id="temp3"></div>
+                            <div id="hum3"></div>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title" id="day4"></h5>
+                        <h6 class="card-subtitle mb-2"><img class="icon4" src=""></h6>
+                        <p class=" card-text">
+                            <div id="temp4"></div>
+                            <div id="hum4"></div>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title" id="day5"></h5>
+                        <h6 class="card-subtitle mb-2"><img class="icon5" src=""></h6>
+                        <p class=" card-text">
+                            <div id="temp5"></div>
+                            <div id="hum5"></div>
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title" id="day2"></h5>
-                    <h6 class="card-subtitle mb-2"><img class="icon2" src=""></h6>
-                    <p class=" card-text">
-                        <div id="temp2"></div>
-                        <div id="hum2"></div>
-                    </p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title" id="day3"></h5>
-                    <h6 class="card-subtitle mb-2"><img class="icon3" src=""></h6>
-                    <p class=" card-text">
-                        <div id="temp3"></div>
-                        <div id="hum3"></div>
-                    </p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title" id="day4"></h5>
-                    <h6 class="card-subtitle mb-2"><img class="icon4" src=""></h6>
-                    <p class=" card-text">
-                        <div id="temp4"></div>
-                        <div id="hum4"></div>
-                    </p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title" id="day5"></h5>
-                    <h6 class="card-subtitle mb-2"><img class="icon5" src=""></h6>
-                    <p class=" card-text">
-                        <div id="temp5"></div>
-                        <div id="hum5"></div>
-                    </p>
-                </div>
-            </div>
-
         </div>
 
     </div>
