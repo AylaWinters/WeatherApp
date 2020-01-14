@@ -50,7 +50,7 @@ $(document).ready(function () {
 
                 //fill in data to display
                 var iconCode = response.weather[0].icon
-                var iconURL = ("http://openweathermap.org/img/wn/" + iconCode + "@2x.png")
+                var iconURL = ("https://openweathermap.org/img/wn/" + iconCode + "@2x.png")
 
                 $("#name").text(response.name + " " + today)
                 $(".icon").attr('src', iconURL)
@@ -61,7 +61,7 @@ $(document).ready(function () {
             });
 
             // fill in data to cards
-            query2URL = "http://api.openweathermap.org/data/2.5/forecast?q=" + city + "&APPID=88ec15a371a789a350f0798f4a6bd272"
+            query2URL = "https://api.openweathermap.org/data/2.5/forecast?q=" + city + "&APPID=88ec15a371a789a350f0798f4a6bd272"
 
             // ajax to pull 5 day data
             $.ajax({
@@ -186,7 +186,7 @@ $(document).ready(function () {
         $(".display").removeClass("hide");
         $(".five").removeClass("hide");
 
-        queryURL = "http://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&APPID=88ec15a371a789a350f0798f4a6bd272"
+        queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&APPID=88ec15a371a789a350f0798f4a6bd272"
 
         // ajax to pull data
         $.ajax({
@@ -213,7 +213,7 @@ $(document).ready(function () {
         });
 
         // fill in data to cards
-        query2URL = "http://api.openweathermap.org/data/2.5/forecast?q=" + cityName + "&APPID=88ec15a371a789a350f0798f4a6bd272"
+        query2URL = "https://api.openweathermap.org/data/2.5/forecast?q=" + cityName + "&APPID=88ec15a371a789a350f0798f4a6bd272"
 
         // ajax to pull 5 day data
         $.ajax({
