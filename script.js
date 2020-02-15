@@ -37,7 +37,6 @@ $(document).ready(function() {
 
     storeCities();
     //input to local storage
-
     function storeCities() {
       localStorage.setItem("cities", JSON.stringify(cityArr));
     }
