@@ -18,7 +18,6 @@ $(document).ready(function() {
     }
     var list = $("#list");
     var cityArr;
-
     //  get cityArr from localStorage
     cityArr = localStorage.getItem("cities");
     //  take a string and make an arr
