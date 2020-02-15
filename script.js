@@ -41,7 +41,6 @@ $(document).ready(function() {
       localStorage.setItem("cities", JSON.stringify(cityArr));
     }
     // pull from local storage
-
     var li = $("<li>").addClass("buttons");
     li.text(upperCase);
     if (city != "") {
