@@ -152,6 +152,8 @@ $(document).ready(function () {
                     $("#temp1").text("Temp: " + ((response.list[i].main.temp - 273.15) * 9 / 5 + 32).toFixed(0))
                     $("#hum1").text("Humidity: " + response.list[i].main.humidity)
                     var ic1 = response.list[i].weather[0].icon
+                    console.log(ic1);
+
                     var iURL1 = ("https://openweathermap.org/img/wn/" + ic1 + "@2x.png")
                     $(".icon1").attr("src", iURL1)
 
