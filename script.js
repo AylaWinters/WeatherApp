@@ -16,6 +16,7 @@ $(document).ready(function() {
 
       makeCallsDoWork(city);
     }
+
     var list = $("#list");
     var cityArr;
     //  get cityArr from localStorage
