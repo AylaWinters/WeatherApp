@@ -47,7 +47,6 @@ $(document).ready(function() {
       list.append(li);
     }
   });
-
   var cityBtns;
   var list = $("#list");
   // get cities from LS
